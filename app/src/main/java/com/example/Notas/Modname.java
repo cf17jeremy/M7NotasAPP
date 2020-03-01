@@ -24,7 +24,7 @@ public class Modname extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Modname);
+        setContentView(R.layout.activity_modname);
 
         cambiarnombre = findViewById(R.id.seachnombre);
 

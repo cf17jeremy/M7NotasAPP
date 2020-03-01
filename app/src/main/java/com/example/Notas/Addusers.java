@@ -25,7 +25,7 @@ public class Addusers extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Addusers);
+        setContentView(R.layout.activity_addusers);
 
         bottonsend = findViewById(R.id.btnAfegir);
         nombre = findViewById(R.id.nombre);

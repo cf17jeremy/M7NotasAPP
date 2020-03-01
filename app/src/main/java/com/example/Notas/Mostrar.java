@@ -43,7 +43,7 @@ public class Mostrar extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Mostrar);
+        setContentView(R.layout.activity_mostrar);
         // get the reference of RecyclerView
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         // set a LinearLayoutManager with default vertical orientation

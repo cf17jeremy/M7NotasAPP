@@ -28,7 +28,7 @@ public class Menu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Menu);
+        setContentView(R.layout.activity_menu);
         add = findViewById(R.id.add);
         mostrar = findViewById(R.id.mostrar);
         aprall = findViewById(R.id.aprall);

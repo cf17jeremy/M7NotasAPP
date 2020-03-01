@@ -20,7 +20,7 @@ public class Inicio extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Menu);
+        setContentView(R.layout.activity_inicio);
 
         usuario = findViewById(R.id.usuario);
         contrasena = findViewById(R.id.contrasena);

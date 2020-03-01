@@ -25,7 +25,7 @@ public class Search extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Search);
+        setContentView(R.layout.activity_seach);
         //nom = findViewById(R.id.nom);
 
         Intent recogerDatos = getIntent();

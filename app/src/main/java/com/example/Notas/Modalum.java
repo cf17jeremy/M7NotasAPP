@@ -23,7 +23,7 @@ public class Modalum extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Modalum);
+        setContentView(R.layout.activity_modalum);
 
         cambiarnombre = findViewById(R.id.changename);
         cambiarnota = findViewById(R.id.changenota);
