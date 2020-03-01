@@ -81,7 +81,7 @@ public class Menu extends AppCompatActivity {
                 alertDialogBuilder.setTitle("Ayuda");
 
                 alertDialogBuilder
-                        .setMessage("Hola, esta es la ventana de ayuda :), hay "+cont+" alumnos")
+                        .setMessage("Hola, esta es la ventana de ayuda, hay "+cont+" alumnos.\nEsta aplicacion esta dedicada a registros de notas, si cree que\nhay algun error o mejora a incorporar porfavor comuniquenoslo.")
                         .setCancelable(false)
                         .setNegativeButton("Cerrar",new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
