@@ -15,7 +15,7 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Arrays;
 
-public class SecondActivity2 extends AppCompatActivity {
+public class Menu extends AppCompatActivity {
     Button add,peligro,mostrar,aprall,help,seach,change,medglob;
 
     String [] arnoms = new String[50];
@@ -28,7 +28,7 @@ public class SecondActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_Menu);
         add = findViewById(R.id.add);
         mostrar = findViewById(R.id.mostrar);
         aprall = findViewById(R.id.aprall);
@@ -43,7 +43,7 @@ public class SecondActivity2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (SecondActivity2.this, addusers.class);
+                Intent intent = new Intent (Menu.this, Addusers.class);
                 intent.putExtra("arnoms", arnoms);
                 intent.putExtra("arnota1", arnota1);
                 intent.putExtra("arnota2", arnota2);
@@ -61,7 +61,7 @@ public class SecondActivity2 extends AppCompatActivity {
                     informacion();
                 }
                 else{
-                    Intent intent = new Intent (SecondActivity2.this, mostrar.class);
+                    Intent intent = new Intent (Menu.this, Mostrar.class);
                     intent.putExtra("arnoms", arnoms);
                     intent.putExtra("arnota1", arnota1);
                     intent.putExtra("arnota2", arnota2);
@@ -76,7 +76,7 @@ public class SecondActivity2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SecondActivity2.this);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Menu.this);
 
                 alertDialogBuilder.setTitle("Ayuda");
 
@@ -119,7 +119,7 @@ public class SecondActivity2 extends AppCompatActivity {
                     informacion();
                 }
                 else {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SecondActivity2.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Menu.this);
                     medglobal = calco(cont, arnota1, arnota2, arnota3);
                     DecimalFormat df = new DecimalFormat("#.#");
                     df.setRoundingMode(RoundingMode.CEILING);
@@ -144,7 +144,7 @@ public class SecondActivity2 extends AppCompatActivity {
                     informacion();
                 }
                 else {
-                    Intent intent = new Intent(SecondActivity2.this, seach.class);
+                    Intent intent = new Intent(Menu.this, Search.class);
                     intent.putExtra("arnoms", arnoms);
                     intent.putExtra("arnota1", arnota1);
                     intent.putExtra("arnota2", arnota2);
@@ -163,7 +163,7 @@ public class SecondActivity2 extends AppCompatActivity {
                     informacion();
                 }
                 else {
-                    Intent intent = new Intent(SecondActivity2.this, modalum.class);
+                    Intent intent = new Intent(Menu.this, Modalum.class);
                     intent.putExtra("arnoms", arnoms);
                     intent.putExtra("arnota1", arnota1);
                     intent.putExtra("arnota2", arnota2);
@@ -181,7 +181,7 @@ public class SecondActivity2 extends AppCompatActivity {
                     informacion();
                 }
                 else {
-                    AlertDialog.Builder dialog = new AlertDialog.Builder(SecondActivity2.this);
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(Menu.this);
                     dialog.setTitle("ADVERTENCIA!");
                     dialog.setMessage("Estas apunto de restaurar toda\nla información de esta app.\nEsta opción es irreversible.\nestás seguro de que quieres continuar? ");
                     dialog.setCancelable(true);
@@ -216,9 +216,9 @@ public class SecondActivity2 extends AppCompatActivity {
     }
 
 
-    //se encarga de mostrar el primer dialogo de informacion de los alumnos, el else como es unico pues se hace en cada una
+    //se encarga de Mostrar el primer dialogo de informacion de los alumnos, el else como es unico pues se hace en cada una
     public void informacion(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(SecondActivity2.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Menu.this);
 
         alertDialogBuilder.setTitle("Informacion");
 

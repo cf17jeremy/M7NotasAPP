@@ -5,64 +5,46 @@
     android:id="@+id/seach"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".modnota">
-
+    tools:context=".Modname">
 
     <TextView
         android:id="@+id/estad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:text="MODIFICAR NOTA"
+        android:text="MODIFICAR NOMBRE"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.081" />
 
     <EditText
         android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nombre del alumno"
+        android:hint="Nombre actual"
         android:inputType="textPersonName"
         android:maxLength="20"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/estad"
-        app:layout_constraintVertical_bias="0.087" />
-
-    <EditText
-        android:id="@+id/nota"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:digits="123"
-        android:ems="10"
-        android:hint="Evaluacion a cambiar "
-        android:inputType="phone"
-        android:maxLength="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.12" />
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/seachnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GUARDAR"
-        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nota"
-        app:layout_constraintVertical_bias="0.097" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        app:layout_constraintVertical_bias="0.127" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

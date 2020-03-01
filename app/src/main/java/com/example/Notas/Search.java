@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class seach extends AppCompatActivity {
+public class Search extends AppCompatActivity {
 
     String [] arnoms;
     int [] arnota1;
@@ -25,7 +25,7 @@ public class seach extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seach);
+        setContentView(R.layout.activity_Search);
         //nom = findViewById(R.id.nom);
 
         Intent recogerDatos = getIntent();
@@ -61,7 +61,7 @@ public class seach extends AppCompatActivity {
                 }
                 if (existe) {
                     float mid = calculos[posicionExiste];
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(seach.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Search.this);
                     alertDialogBuilder.setTitle("Alumno: "+search);
                     DecimalFormat df = new DecimalFormat("#.#");
                     df.setRoundingMode(RoundingMode.CEILING);
@@ -74,7 +74,7 @@ public class seach extends AppCompatActivity {
                                 }
                             }).create().show();
                 } else {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(seach.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Search.this);
                     alertDialogBuilder.setTitle("Información");
 
                     alertDialogBuilder

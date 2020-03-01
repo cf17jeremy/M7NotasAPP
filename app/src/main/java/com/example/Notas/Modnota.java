@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class modnota extends AppCompatActivity {
+public class Modnota extends AppCompatActivity {
 
     String [] arnoms;
     int [] arnota1;
@@ -30,7 +30,7 @@ public class modnota extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modnota);
+        setContentView(R.layout.activity_Modnota);
 
         cambiarnota = findViewById(R.id.save);
 
@@ -62,7 +62,7 @@ public class modnota extends AppCompatActivity {
                         break;
                     }
                 }if ((vacionulo(nomGuardar))) {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                     alertDialogBuilder.setTitle("Información");
                     alertDialogBuilder
                             .setMessage("El nombre no puede estar vacío!")
@@ -73,7 +73,7 @@ public class modnota extends AppCompatActivity {
                                 }
                             }).create().show();
                 } else if (!existe){
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                     alertDialogBuilder.setTitle("Información");
                     alertDialogBuilder
                             .setMessage("El alumno " + nomGuardar + " no existe!")
@@ -84,7 +84,7 @@ public class modnota extends AppCompatActivity {
                                 }
                             }).create().show();
                 }else if (guardarnota.getText().toString().length() == 0 && contnom==0) {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                     alertDialogBuilder.setTitle("Información");
                     alertDialogBuilder
                             .setMessage("La evaluacion no puede estar vacía!")
@@ -95,7 +95,7 @@ public class modnota extends AppCompatActivity {
                                 }
                             }).create().show();
                 } else if (guardarnota.getText().toString().length() == 0 && contnom>1) {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                     alertDialogBuilder.setTitle("Información");
                     alertDialogBuilder
                             .setMessage("La nota no puede estar vacía!")
@@ -132,7 +132,7 @@ public class modnota extends AppCompatActivity {
                             }
                             contnom++;
                         } else {
-                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                             alertDialogBuilder.setTitle("Información");
 
                             alertDialogBuilder
@@ -148,7 +148,7 @@ public class modnota extends AppCompatActivity {
                     else{
                         notasave = Integer.parseInt(nota.getText().toString());
                         if (notasave<0 || notasave>10){
-                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                             alertDialogBuilder.setTitle("Información");
 
                             alertDialogBuilder
@@ -170,7 +170,7 @@ public class modnota extends AppCompatActivity {
                                 nota.setKeyListener(DigitsKeyListener.getInstance("123"));
                                 contnom = -1;
 
-                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                                 alertDialogBuilder.setTitle("Información");
 
                                 alertDialogBuilder
@@ -191,7 +191,7 @@ public class modnota extends AppCompatActivity {
                                 nota.setKeyListener(DigitsKeyListener.getInstance("123"));
                                 contnom = -1;
 
-                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                                 alertDialogBuilder.setTitle("Información");
 
                                 alertDialogBuilder
@@ -212,7 +212,7 @@ public class modnota extends AppCompatActivity {
                                 nota.setKeyListener(DigitsKeyListener.getInstance("123"));
                                 contnom = -1;
 
-                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modnota.this);
+                                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modnota.this);
                                 alertDialogBuilder.setTitle("Información");
 
                                 alertDialogBuilder

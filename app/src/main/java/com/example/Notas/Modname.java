@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class modname extends AppCompatActivity {
+public class Modname extends AppCompatActivity {
 
     String [] arnoms;
     int contnom = 0;
@@ -24,7 +24,7 @@ public class modname extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modname);
+        setContentView(R.layout.activity_Modname);
 
         cambiarnombre = findViewById(R.id.seachnombre);
 
@@ -64,7 +64,7 @@ public class modname extends AppCompatActivity {
                         nom.setText("");
                         contnom=0;
 
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modname.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modname.this);
                     alertDialogBuilder.setTitle("Información");
                     nom.setHint("Nombre actual");
                     alertDialogBuilder
@@ -78,7 +78,7 @@ public class modname extends AppCompatActivity {
                     Log.d("PRUEBA", "Esta es la prueba "+arnoms[0]);
                 }
                 else {
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modname.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modname.this);
                     alertDialogBuilder.setTitle("Información");
 
                     alertDialogBuilder

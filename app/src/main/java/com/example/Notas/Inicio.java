@@ -2,7 +2,6 @@ package com.example.Notas;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.snackbar.Snackbar;
 
-public class MainActivity extends AppCompatActivity {
+public class Inicio extends AppCompatActivity {
 
 
 
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_Menu);
 
         usuario = findViewById(R.id.usuario);
         contrasena = findViewById(R.id.contrasena);
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
               if ((usuario.getText().toString().trim().equals("Admin")) && (contrasena.getText().toString().trim().equals("12345"))){
-                  Intent intent = new Intent (MainActivity.this, SecondActivity2.class);
+                  Intent intent = new Intent (Inicio.this, Menu.class);
                   startActivity(intent);
               }
               else{
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;

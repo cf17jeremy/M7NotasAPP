@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class modalum extends AppCompatActivity {
+public class Modalum extends AppCompatActivity {
 
     String [] arnoms;
     int [] arnota1;
@@ -23,7 +23,7 @@ public class modalum extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modalum);
+        setContentView(R.layout.activity_Modalum);
 
         cambiarnombre = findViewById(R.id.changename);
         cambiarnota = findViewById(R.id.changenota);
@@ -43,7 +43,7 @@ public class modalum extends AppCompatActivity {
                     informacion();
                 }
                 else{
-                    Intent intent = new Intent (modalum.this, modname.class);
+                    Intent intent = new Intent (Modalum.this, Modname.class);
                     intent.putExtra("arnoms", arnoms);
                     intent.putExtra("arnota1", arnota1);
                     intent.putExtra("arnota2", arnota2);
@@ -62,7 +62,7 @@ public class modalum extends AppCompatActivity {
                     informacion();
                 }
                 else{
-                    Intent intent = new Intent (modalum.this, modnota.class);
+                    Intent intent = new Intent (Modalum.this, Modnota.class);
                     intent.putExtra("arnoms", arnoms);
                     intent.putExtra("arnota1", arnota1);
                     intent.putExtra("arnota2", arnota2);
@@ -81,7 +81,7 @@ public class modalum extends AppCompatActivity {
                     informacion();
                 }
                 else{
-                    Intent intent = new Intent (modalum.this, modnota.class);
+                    Intent intent = new Intent (Modalum.this, Modnota.class);
                     intent.putExtra("arnoms", arnoms);
                     intent.putExtra("arnota1", arnota1);
                     intent.putExtra("arnota2", arnota2);
@@ -93,9 +93,9 @@ public class modalum extends AppCompatActivity {
         });
     }
 
-    //se encarga de mostrar el primer dialogo de informacion de los alumnos, el else como es unico pues se hace en cada una
+    //se encarga de Mostrar el primer dialogo de informacion de los alumnos, el else como es unico pues se hace en cada una
     public void informacion(){
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(modalum.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Modalum.this);
 
         alertDialogBuilder.setTitle("Informacion");
 
@@ -114,14 +114,14 @@ public class modalum extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // devolucion modname --> arraynames
+        // devolucion Modname --> arraynames
         if(requestCode==1){
             if(resultCode == RESULT_OK){
                 arnoms = data.getStringArrayExtra("arnoms");
             }
         }
 
-        // devolucion modnota
+        // devolucion Modnota
         if(requestCode == 2){
             if(resultCode == RESULT_OK){
                 arnota1 = data.getIntArrayExtra("arnota1");

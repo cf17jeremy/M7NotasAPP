@@ -10,7 +10,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class addusers extends AppCompatActivity {
+public class Addusers extends AppCompatActivity {
 
     String [] arnoms;
     int [] arnota1;
@@ -25,7 +25,7 @@ public class addusers extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addusers);
+        setContentView(R.layout.activity_Addusers);
 
         bottonsend = findViewById(R.id.btnAfegir);
         nombre = findViewById(R.id.nombre);
@@ -49,7 +49,7 @@ public class addusers extends AppCompatActivity {
                 String nomGuardar = nomAlumne.getText().toString().trim();
 
                 if (notaAlumne.getText().toString().length() == 0){
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(addusers.this);
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Addusers.this);
 
                     alertDialogBuilder.setTitle("Información");
 
@@ -66,7 +66,7 @@ public class addusers extends AppCompatActivity {
                     int notaGuardar = Integer.parseInt(notaAlumne.getText().toString());
 
                     if ((notaGuardar < 0) || (notaGuardar > 10)) {
-                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(addusers.this);
+                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Addusers.this);
 
                         alertDialogBuilder.setTitle("Información");
                         alertDialogBuilder
@@ -79,7 +79,7 @@ public class addusers extends AppCompatActivity {
                                 }).create().show();
 
                     } else if ((vacionulo(nomGuardar))) {
-                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(addusers.this);
+                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(Addusers.this);
 
                         alertDialogBuilder.setTitle("Información");
                         alertDialogBuilder

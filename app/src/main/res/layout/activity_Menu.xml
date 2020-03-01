@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="50dp"
-    tools:context=".SecondActivity2">
+    tools:context=".Menu">
 
     <Button
         android:id="@+id/add"

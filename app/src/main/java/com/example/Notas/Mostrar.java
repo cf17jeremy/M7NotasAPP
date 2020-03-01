@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
-public class mostrar extends AppCompatActivity {
+public class Mostrar extends AppCompatActivity {
 
     String [] arnoms;
     int [] arnota1;
@@ -43,15 +43,15 @@ public class mostrar extends AppCompatActivity {
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mostrar);
+        setContentView(R.layout.activity_Mostrar);
         // get the reference of RecyclerView
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         // set a LinearLayoutManager with default vertical orientation
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
-        //  call the constructor of CustomAdapter to send the reference and data to Adapter
-        com.example.Notas.CustomAdapter customAdapter = new com.example.Notas.CustomAdapter(mostrar.this, personNames);
-        recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
+        //  call the constructor of RecycleView to send the reference and data to Adapter
+        RecycleView recycleView = new RecycleView(Mostrar.this, personNames);
+        recyclerView.setAdapter(recycleView); // set the Adapter to RecyclerView
     }
 
     public static float [] calco(int cont, int [] arnota1, int [] arnota2, int [] arnota3){
