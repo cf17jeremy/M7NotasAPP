@@ -1,4 +1,4 @@
-package com.example.leepper;
+package com.example.Notas;
 
 import android.content.Intent;
 import android.os.Bundle;

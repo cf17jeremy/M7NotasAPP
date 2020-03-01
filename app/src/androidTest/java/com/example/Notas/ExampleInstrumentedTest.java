@@ -1,4 +1,4 @@
-package com.example.leepper;
+package com.example.Notas;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.leepper", appContext.getPackageName());
+        assertEquals("com.example.Notas", appContext.getPackageName());
     }
 }

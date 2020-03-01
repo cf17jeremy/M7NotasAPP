@@ -1,8 +1,7 @@
-package com.example.leepper;
+package com.example.Notas;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -51,7 +50,7 @@ public class mostrar extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         //  call the constructor of CustomAdapter to send the reference and data to Adapter
-        com.example.leepper.CustomAdapter customAdapter = new com.example.leepper.CustomAdapter(mostrar.this, personNames);
+        com.example.Notas.CustomAdapter customAdapter = new com.example.Notas.CustomAdapter(mostrar.this, personNames);
         recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
     }
 
