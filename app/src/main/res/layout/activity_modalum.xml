@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lineal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    tools:context=".modalum">
+
+    <TextView
+        android:id="@+id/estad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="cursive"
+        android:text="MODIFICAR ALUMNOS"
+        android:textSize="30sp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintBottom_toTopOf="@+id/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <Button
+        android:id="@+id/changename"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="130dp"
+        android:text="Modificar nombre"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/changenota"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:text="Modificar nota"
+        android:textColor="#FF0000" />
+
+</LinearLayout>

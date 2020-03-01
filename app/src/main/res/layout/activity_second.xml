@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    tools:context=".SecondActivity2">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Añadir alumnos"
+        android:textColor="#4B6CF7" />
+
+    <Button
+        android:id="@+id/mostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar estadisticas"
+        android:textColor="#4B6CF7" />
+
+    <Button
+        android:id="@+id/aprall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aprobar a todos"
+        android:textColor="#4B6CF7" />
+
+    <Button
+        android:id="@+id/medglob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEDIA GLOBAL"
+        android:textColor="#4B6CF7" />
+
+    <Button
+        android:id="@+id/seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUSCAR ALUMNO"
+        android:textColor="#4B6CF7" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MODIFICAR ALUMNOS"
+        android:textColor="#4B6CF7" />
+
+    <Button
+        android:id="@+id/peligro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Valores de fabrica"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayuda"
+        android:textColor="#FF0000" />
+
+</LinearLayout>
+
