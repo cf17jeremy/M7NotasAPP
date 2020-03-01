@@ -13,9 +13,9 @@
         android:id="@+id/estad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:fontFamily="cursive"
-        android:text="MODIFICAR ALUMNOS"
+        android:text="@string/modificar_alumnos"
         android:textSize="30sp"
         android:verticalScrollbarPosition="defaultPosition"
         app:layout_constraintBottom_toTopOf="@+id/nombre"
@@ -29,14 +29,14 @@
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:layout_marginTop="130dp"
-        android:text="Modificar nombre"
+        android:text="@string/modificar_nombre"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/changenota"
         android:layout_width="match_parent"
         android:layout_height="73dp"
-        android:text="Modificar nota"
+        android:text="@string/modificar_nota"
         android:textColor="#4B6CF7" />
 
 </LinearLayout>

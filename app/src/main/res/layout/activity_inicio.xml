@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Inicio">
 
-    <include layout="@layout/content_Inicio" />
+    <include layout="@layout/content_inicio" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

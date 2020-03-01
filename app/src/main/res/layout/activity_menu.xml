@@ -12,56 +12,56 @@
         android:id="@+id/add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Añadir alumnos"
+        android:text="@string/a_adir_alumnos2"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/mostrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mostrar estadisticas"
+        android:text="@string/mostrar_estadisticas"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/aprall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Aprobar a todos"
+        android:text="@string/aprobar_a_todos"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/medglob"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MEDIA GLOBAL"
+        android:text="@string/media_global"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/seach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="BUSCAR ALUMNO"
+        android:text="@string/buscar_alumno"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/change"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MODIFICAR ALUMNOS"
+        android:text="@string/modificar_alumnos"
         android:textColor="#4B6CF7" />
 
     <Button
         android:id="@+id/peligro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Valores de fabrica"
+        android:text="@string/valores_de_fabrica"
         android:textColor="#FF0000" />
 
     <Button
         android:id="@+id/help"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ayuda"
+        android:text="@string/ayuda"
         android:textColor="#FF0000" />
 
 </LinearLayout>
