@@ -8,61 +8,100 @@
     android:paddingTop="50dp"
     tools:context=".Menu">
 
-    <Button
-        android:id="@+id/add"
+    <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/a_adir_alumnos2"
-        android:textColor="#4B6CF7" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/mostrar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/mostrar_estadisticas"
-        android:textColor="#4B6CF7" />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="205.5dp"
+            android:layout_height="200dp"
+            android:background="@drawable/add"
+            android:gravity="bottom|center"
+            android:text="@string/a_adir_alumnos2"
+            android:textColor="#4B6CF7"
+            app:layout_column="0"
+            app:layout_row="0" />
 
-    <Button
-        android:id="@+id/aprall"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/aprobar_a_todos"
-        android:textColor="#4B6CF7" />
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="205.5dp"
+            android:layout_height="200dp"
+            android:background="@drawable/stats"
+            android:gravity="bottom|center"
+            android:text="@string/mostrar_estadisticas"
+            android:textAlignment="center"
+            android:textColor="#4B6CF7"
+            app:layout_column="1"
+            app:layout_row="0" />
 
-    <Button
-        android:id="@+id/medglob"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/media_global"
-        android:textColor="#4B6CF7" />
+    </androidx.gridlayout.widget.GridLayout>
 
-    <Button
-        android:id="@+id/seach"
+    <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/buscar_alumno"
-        android:textColor="#4B6CF7" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/change"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/modificar_alumnos"
-        android:textColor="#4B6CF7" />
+        <Button
+            android:id="@+id/aprall"
+            android:layout_width="205.5dp"
+            android:layout_height="200dp"
+            android:background="@drawable/tick"
+            android:gravity="bottom|center"
+            android:text="@string/aprobar_a_todos"
+            android:textColor="#4B6CF7" />
 
-    <Button
-        android:id="@+id/peligro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/valores_de_fabrica"
-        android:textColor="#FF0000" />
+        <Button
+            android:id="@+id/medglob"
+            android:layout_width="205.5dp"
+            android:layout_height="200dp"
+            android:background="@drawable/medglobal"
+            android:gravity="bottom|center"
+            android:text="@string/media_global"
+            android:textColor="#4B6CF7" />
+    </androidx.gridlayout.widget.GridLayout>
 
-    <Button
-        android:id="@+id/help"
+    <androidx.gridlayout.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ayuda"
-        android:textColor="#FF0000" />
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/seach"
+            android:layout_width="205.5dp"
+            android:layout_height="200dp"
+            android:background="@drawable/buscar"
+            android:gravity="bottom|center"
+            android:text="@string/buscar_alumno"
+            android:textColor="#4B6CF7" />
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="205.5dp"
+            android:layout_height="200dp"
+            android:background="@drawable/modalum"
+            android:gravity="bottom|center"
+            android:text="@string/modificar_alumnos"
+            android:textColor="#4B6CF7" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/peligro"
+            android:layout_width="205.5dp"
+            android:text="@string/valores_de_fabrica"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="205.5dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ayuda"
+            android:textColor="#FF0000" />
+
+    </androidx.gridlayout.widget.GridLayout>
 
 </LinearLayout>
 
