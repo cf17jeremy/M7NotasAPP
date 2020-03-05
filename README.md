@@ -16,7 +16,7 @@
 ### Acceso
 ```
 - Usuario: Admin
-- Contrasenya: 12345
+- Contraseña: 12345
 ```
 # Legal
 ### Licencia
