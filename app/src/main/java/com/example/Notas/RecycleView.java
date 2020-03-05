@@ -15,11 +15,19 @@ import java.util.ArrayList;
 public class RecycleView extends RecyclerView.Adapter<RecycleView.MyViewHolder> {
 
     ArrayList<String> personNames;
+    ArrayList<Integer>notas1;
+    ArrayList<Integer>notas2;
+    ArrayList<Integer>notas3;
+    ArrayList<Float>medias;
     Context context;
 
-    public RecycleView(Context context, ArrayList<String> personNames) {
+    public RecycleView(Context context, ArrayList<String> personNames, ArrayList<Integer> notas1, ArrayList<Integer> notas2, ArrayList<Integer> notas3, ArrayList<Float> medias) {
         this.context = context;
         this.personNames = personNames;
+        this.notas1 = notas1;
+        this.notas2 = notas2;
+        this.notas3 = notas3;
+        this.medias = medias;
     }
 
     @Override
@@ -54,13 +62,20 @@ public class RecycleView extends RecyclerView.Adapter<RecycleView.MyViewHolder> 
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView name;// init the item view's
+        TextView nota1;// init the item view's
+        TextView nota2;// init the item view's
+        TextView nota3;// init the item view's
+        TextView media;// init the item view's
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
             // get the reference of item view's
             name = (TextView) itemView.findViewById(R.id.name);
-
+            nota1 = (TextView) itemView.findViewById(R.id.nota1);
+            nota2 = (TextView) itemView.findViewById(R.id.nota2);
+            nota3 = (TextView) itemView.findViewById(R.id.nota3);
+            media = (TextView) itemView.findViewById(R.id.media);
         }
     }
 }
