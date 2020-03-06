@@ -1,107 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingTop="50dp"
     tools:context=".Menu">
 
-    <androidx.gridlayout.widget.GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/aprall"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tick"
+        android:gravity="bottom|center"
+        android:text="@string/aprobar_a_todos"
+        android:textColor="#4B6CF7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
 
-        <Button
-            android:id="@+id/add"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/add"
-            android:gravity="bottom|center"
-            android:text="@string/a_adir_alumnos2"
-            android:textColor="#4B6CF7"
-            app:layout_column="0"
-            app:layout_row="0" />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/add"
+        android:gravity="bottom|center"
+        android:text="@string/a_adir_alumnos2"
+        android:textColor="#4B6CF7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/mostrar"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/stats"
-            android:gravity="bottom|center"
-            android:text="@string/mostrar_estadisticas"
-            android:textAlignment="center"
-            android:textColor="#4B6CF7"
-            app:layout_column="2"
-            app:layout_row="0" />
+    <Button
+        android:id="@+id/medglob"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/medglobal"
+        android:gravity="bottom|center"
+        android:text="@string/media_global"
+        android:textColor="#4B6CF7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mostrar" />
 
-        <Button
-            android:id="@+id/aprall"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/tick"
-            android:gravity="bottom|center"
-            android:text="@string/aprobar_a_todos"
-            android:textColor="#4B6CF7"
-            app:layout_column="0"
-            app:layout_row="1" />
+    <Button
+        android:id="@+id/peligro"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/restore"
+        android:gravity="bottom|center"
+        android:text="@string/valores_de_fabrica"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aprall" />
 
-        <Button
-            android:id="@+id/medglob"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/medglobal"
-            android:gravity="bottom|center"
-            android:text="@string/media_global"
-            android:textColor="#4B6CF7"
-            app:layout_column="2"
-            app:layout_row="1" />
+    <Button
+        android:id="@+id/mostrar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/stats"
+        android:gravity="bottom|center"
+        android:text="@string/mostrar_estadisticas"
+        android:textAlignment="center"
+        android:textColor="#4B6CF7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/seach"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/buscar"
-            android:gravity="bottom|center"
-            android:text="@string/buscar_alumno"
-            android:textColor="#4B6CF7"
-            app:layout_column="0"
-            app:layout_row="2" />
+    <Button
+        android:id="@+id/seach"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buscar"
+        android:gravity="bottom|center"
+        android:text="@string/buscar_alumno"
+        android:textColor="#4B6CF7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peligro" />
 
-        <Button
-            android:id="@+id/change"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/modalum"
-            android:gravity="bottom|center"
-            android:text="@string/modificar_alumnos"
-            android:textColor="#4B6CF7"
-            app:layout_column="2"
-            app:layout_row="2" />
+    <Button
+        android:id="@+id/help"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/help"
+        android:gravity="bottom|center"
+        android:text="@string/ayuda"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change" />
 
-        <Button
-            android:id="@+id/help"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/help"
-            android:text="@string/ayuda"
-            android:textColor="#FF0000"
-            app:layout_column="2"
-            app:layout_row="3"
-            android:gravity="bottom|center"/>
+    <Button
+        android:id="@+id/change"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/modalum"
+        android:gravity="bottom|center"
+        android:text="@string/modificar_alumnos"
+        android:textColor="#4B6CF7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medglob" />
 
-        <Button
-            android:id="@+id/peligro"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:background="@drawable/restore"
-            android:gravity="bottom|center"
-            android:text="@string/valores_de_fabrica"
-            android:textColor="#FF0000"
-            app:layout_column="0"
-            app:layout_row="3" />
-
-    </androidx.gridlayout.widget.GridLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
