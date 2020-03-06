@@ -32,14 +32,24 @@ public class Mostrar extends AppCompatActivity {
         cont = recogerDatos.getIntExtra("cont", 0);
 
         ArrayList<String> personNames = new ArrayList<>();
+        ArrayList<Integer> notas1 = new ArrayList<>();
+        ArrayList<Integer> notas2 = new ArrayList<>();
+        ArrayList<Integer> notas3 = new ArrayList<>();
+        ArrayList<Float> medias = new ArrayList<>();
+
         calculos = calco(cont,arnota1,arnota2,arnota3);
+
         for (int i=0;i<cont;i++){
             float mid = calculos[i];
             DecimalFormat df = new DecimalFormat("#.#");
             df.setRoundingMode(RoundingMode.CEILING);
 
             //antes solo tenia calculos[i] para imprimir luego añadi el float
-            personNames.add(arnoms[i]+ "----> "+"\t"+arnota1[i]+", "+arnota2[i]+", "+arnota3[i]+" MEDIA---> "+df.format(mid));
+            personNames.add(arnoms[i]);
+            notas1.add(arnota1[i]);
+            notas2.add(arnota2[i]);
+            notas3.add(arnota3[i]);
+            medias.add(Float.parseFloat(df.format(mid)));
         }
 
         super.onCreate(savedInstanceState);
@@ -50,8 +60,8 @@ public class Mostrar extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         //  call the constructor of RecycleView to send the reference and data to Adapter
-        RecycleView recycleView = new RecycleView(Mostrar.this, personNames);
-        recyclerView.setAdapter(recycleView); // set the Adapter to RecyclerView
+        com.example.Notas.RecycleView customAdapter = new com.example.Notas.RecycleView(Mostrar.this, personNames, notas1, notas2, notas3, medias);
+        recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
     }
 
     public static float [] calco(int cont, int [] arnota1, int [] arnota2, int [] arnota3){
