@@ -1,14 +1,13 @@
 package com.example.Notas;
 
 import android.content.Intent;
+import android.icu.text.DecimalFormat;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 
@@ -35,21 +34,20 @@ public class Mostrar extends AppCompatActivity {
         ArrayList<Integer> notas1 = new ArrayList<>();
         ArrayList<Integer> notas2 = new ArrayList<>();
         ArrayList<Integer> notas3 = new ArrayList<>();
-        ArrayList<Float> medias = new ArrayList<>();
+        ArrayList<String> medias = new ArrayList<>();
 
         calculos = calco(cont,arnota1,arnota2,arnota3);
 
         for (int i=0;i<cont;i++){
             float mid = calculos[i];
             DecimalFormat df = new DecimalFormat("#.#");
-            df.setRoundingMode(RoundingMode.CEILING);
 
             //antes solo tenia calculos[i] para imprimir luego añadi el float
             personNames.add(arnoms[i]);
             notas1.add(arnota1[i]);
             notas2.add(arnota2[i]);
             notas3.add(arnota3[i]);
-            medias.add(Float.parseFloat(df.format(mid)));
+            medias.add(df.format(mid));
         }
 
         super.onCreate(savedInstanceState);

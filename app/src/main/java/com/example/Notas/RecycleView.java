@@ -17,10 +17,10 @@ public class RecycleView extends RecyclerView.Adapter<RecycleView.MyViewHolder> 
     ArrayList<Integer>notas1;
     ArrayList<Integer>notas2;
     ArrayList<Integer>notas3;
-    ArrayList<Float>medias;
+    ArrayList<String>medias;
     Context context;
 
-    public RecycleView(Context context, ArrayList<String> personNames, ArrayList<Integer> notas1, ArrayList<Integer> notas2, ArrayList<Integer> notas3, ArrayList<Float> medias) {
+    public RecycleView(Context context, ArrayList<String> personNames, ArrayList<Integer> notas1, ArrayList<Integer> notas2, ArrayList<Integer> notas3, ArrayList<String> medias) {
         this.context = context;
         this.personNames = personNames;
         this.notas1 = notas1;
