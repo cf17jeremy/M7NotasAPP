@@ -109,6 +109,7 @@ public class Menu extends AppCompatActivity {
                             arnota3[i] = 5;
                         }
                     }
+                    Toast.makeText(getApplicationContext(),"OPERACIÓN REALIZADA, TODOS LOS ALUMNOS HAN SIDO APROBADOS",Toast.LENGTH_SHORT).show();
                 }
             }
         });

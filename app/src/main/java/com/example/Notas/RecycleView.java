@@ -13,7 +13,6 @@ import java.util.ArrayList;
 
 
 public class RecycleView extends RecyclerView.Adapter<RecycleView.MyViewHolder> {
-
     ArrayList<String> personNames;
     ArrayList<Integer>notas1;
     ArrayList<Integer>notas2;
@@ -43,6 +42,10 @@ public class RecycleView extends RecyclerView.Adapter<RecycleView.MyViewHolder> 
     public void onBindViewHolder(MyViewHolder holder, final int position) {
         // set the data in items
         holder.name.setText(personNames.get(position));
+        holder.nota1.setText(notas1.get(position).toString());
+        holder.nota2.setText(notas2.get(position).toString());
+        holder.nota3.setText(notas3.get(position).toString());
+        holder.media.setText(String.valueOf(medias.get(position)));
         // implement setOnClickListener event on item view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
