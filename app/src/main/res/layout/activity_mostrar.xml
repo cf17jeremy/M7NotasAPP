@@ -13,6 +13,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="cursive"
         android:text="@string/estadisticas"
+        android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/nombre"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,5 +30,59 @@
         tools:layout_editor_absoluteX="0dp">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/estad">
+
+        <TextView
+            android:id="@+id/Nom"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:gravity="center"
+            android:text="@string/nombre"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Avaluacio1"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Avaluacio2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A2"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Avaluacio3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="A3"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/Media"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Media"
+            android:textColor="#000000" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
